@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Delta Portal</title>
+    <style>
+        /* ページ全体の横ズレを防止 */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+        }
+
+        body {
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            /* パディングが横幅を広げないように設定 */
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            box-sizing: border-box;
+        }
+
+        /* ボタン共通設定 */
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #007AFF;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            border-radius: 12px;
+            font-weight: bold;
+            margin: 10px 0;
+            transition: opacity 0.2s;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .btn:active {
+            opacity: 0.7;
+        }
+
+        .btn-ksign { background-color: #5856D6; }
+        .btn-delta { background-color: #32D74B; color: #000; }
+        
+        /* ボットサイトボタン：中央配置を確実にする */
+        .btn-bot { 
+            background-color: #121212; 
+            border: 1px solid #007AFF; 
+            color: #007AFF; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 10px;
+            background: #000;
+            box-sizing: border-box;
+        }
+
+        h2 { font-size: 18px; margin-top: 0; margin-bottom: 15px; }
+        p { font-size: 14px; text-align: left; margin: 10px 0 5px 0; color: #8E8E93; }
+
+        /* フッターエリアのズレ防止 */
+        .footer-link {
+            margin-top: 10px;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="IMG_7770.jpeg" alt="Header Image" class="header-img">
+
+        <div class="section">
+            <h2>キー取得サイト</h2>
+            <a href="https://izen.lol/" target="_blank" rel="noopener noreferrer" class="btn">キーを取得する</a>
+        </div>
+
+        <div class="section">
+            <h2>デルタ(v2.707)ダウンロード方法</h2>
+            <p>ksign 入れるサイト⬇️</p>
+            <a href="https://khoindvn.io.vn" target="_blank" rel="noopener noreferrer" class="btn btn-ksign">KSign サイトへ</a>
+
+            <p>delta 入れるサイト⬇️</p>
+            <a href="https://delta-executor.com/#google_vignette" target="_blank" rel="noopener noreferrer" class="btn btn-delta">Delta ダウンロード</a>
+        </div>
+
+        <div class="section">
+            <h2>導入解説動画</h2>
+            <video controls autoplay loop muted playsinline>
+                <source src="video.MOV" type="video/quicktime">
+                <source src="video.MOV" type="video/mp4">
+                ブラウザが動画に対応していません。
+            </video>
+        </div>
+
+        <div class="footer-link">
+            <p style="text-align: center; margin-bottom: 10px; color: #ffffff;">スクリプトボットサイト⬇️</p>
+            <a href="https://ggezyoulose-eng.github.io/command/" target="_blank" rel="noopener noreferrer" class="btn btn-bot">スクリプトボットサイトを開く</a>
+        </div>
+    </div>
+
+</body>
+</html>
